@@ -48,5 +48,10 @@ class AppServiceProvider extends ServiceProvider
         Blade::directive('route', function ($route) {
             return "<?= route($route) ?>";
         });
+
+        // Blade Directive URL
+        Blade::directive('url', function ($url) {
+            return "<?= url($url) ?>";
+        });
     }
 }
